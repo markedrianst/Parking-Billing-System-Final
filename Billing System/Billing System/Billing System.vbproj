@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60069CFF-25F0-4CBA-89B2-930EE5984157}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Billing_System.My.MyApplication</StartupObject>
+    <RootNamespace>Billing_System</RootNamespace>
+    <AssemblyName>Billing System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Billing System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Billing System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Confirmation.Designer.vb">
+      <DependentUpon>Confirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers_Mainform.Designer.vb">
+      <DependentUpon>Customers_Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers_Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_UI.Designer.vb">
+      <DependentUpon>Customer_UI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_UI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.vb">
+      <DependentUpon>Main_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_reports.Designer.vb">
+      <DependentUpon>Manage_reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParkNow.Designer.vb">
+      <DependentUpon>ParkNow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParkNow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticket.Designer.vb">
+      <DependentUpon>ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_category.Designer.vb">
+      <DependentUpon>Vehicle_category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Confirmation.resx">
+      <DependentUpon>Confirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers_Mainform.resx">
+      <DependentUpon>Customers_Mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_UI.resx">
+      <DependentUpon>Customer_UI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_reports.resx">
+      <DependentUpon>Manage_reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkNow.resx">
+      <DependentUpon>ParkNow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticket.resx">
+      <DependentUpon>ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_category.resx">
+      <DependentUpon>Vehicle_category.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400108508_218624447848899_3820759667496917237_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGMAIN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showpass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Project %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7262320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jeni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web_Photo_Editor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Project %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Project %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Project %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2023-12-01_225421-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Animation GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Project %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Project %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
